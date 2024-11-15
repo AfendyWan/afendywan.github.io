@@ -4,25 +4,6 @@ This repository demonstrates a Proof of Concept (POC) for implementing **mobile 
 
 The goal is to validate the process of launching specific app pages directly from external URLs.
 
----
-
-## 📋 Table of Contents
-
-1. [Introduction](#introduction)
-2. [Requirements](#requirements)
-3. [Setup Instructions](#setup-instructions)
-   - [Android: `assetlinks.json`](#android-assetlinksjson)
-   - [iOS: `apple-app-site-association`](#ios-apple-app-site-association)
-   - [Hosting Files on GitHub Pages](#hosting-files-on-github-pages)
-4. [Testing the Setup](#testing-the-setup)
-   - [Testing Android App Links](#testing-android-app-links)
-   - [Testing iOS Universal Links](#testing-ios-universal-links)
-5. [Troubleshooting](#troubleshooting)
-6. [References](#references)
-7. [License](#license)
-
----
-
 ## 🛠️ Introduction
 
 Deep linking enables mobile apps to handle URLs that open specific in-app content. This repository provides an end-to-end POC for:
