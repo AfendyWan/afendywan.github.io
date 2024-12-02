@@ -1,13 +1,5 @@
-[
-  {
-    "relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.bazooka.settle_mobile",
-      "sha256_cert_fingerprints": [
-        "BB:4F:7E:1E:27:EC:5A:7B:D0:24:9E:A8:82:39:2A:1A:F8:B5:04:30:8A:C2:8A:A1:FE:40:34:DD:7B:1D:E8:84"
-      ]
-    }
-  },
-  "fallbackUrl": "https://play.google.com/store/apps/details?id=com.mobiusx.live4dresults&hl=en-SG"
-]
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.bazooka.settle_mobile",
+               "sha256_cert_fingerprints": ["BB:4F:7E:1E:27:EC:5A:7B:D0:24:9E:A8:82:39:2A:1A:F8:B5:04:30:8A:C2:8A:A1:FE:40:34:DD:7B:1D:E8:84"] }
+}]
