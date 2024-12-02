@@ -6,7 +6,18 @@
     <title>Redirecting...</title>
 </head>
 <body>
-   <a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end" type="button" role="button" class="btn btn-primary">
-    <p>Google Play Store: <a href="https://play.google.com/store/apps/details?id=com.mobiusx.live4dresults&hl=en-SG">click here to download the app</a>.</p>
+    <script>
+        const fallbackUrl = "https://play.google.com/store/apps/details?id=com.bazooka.settle_mobile&hl=en-SG";
+        const intentUrl = "intent://afendywan.github.io/#Intent;scheme=https;package=com.bazooka.settle_mobile;S.browser_fallback_url=" + encodeURIComponent(fallbackUrl) + ";end";
+
+        // Redirect to the intent URL
+        window.location.href = intentUrl;
+
+        // If the app fails to open, redirect to the Play Store
+        setTimeout(() => {
+            window.location.href = fallbackUrl;
+        }, 2000);
+    </script>
+    <p>If you are not redirected, <a href="https://play.google.com/store/apps/details?id=com.bazooka.settle_mobile&hl=en-SG">click here to open the Play Store</a>.</p>
 </body>
 </html>
