@@ -15,16 +15,16 @@
             const newUrl = `${window.location.origin}/?action=${fragment}`;
             window.location.href = newUrl;
         } else {
-       const fallbackUrl = "https://play.google.com/store/search?q=toto&c=apps&hl=en-SG";
-        const intentUrl = "intent://afendywan.github.io/#Intent;scheme=https;package=com.bazooka.settle_mobile;S.browser_fallback_url=" + encodeURIComponent(fallbackUrl) + ";end";
+            const fallbackUrl = "https://play.google.com/store/search?q=toto&c=apps&hl=en-SG";
+            const intentUrl = "intent://afendywan.github.io/#Intent;scheme=https;package=com.bazooka.settle_mobile;S.browser_fallback_url=" + encodeURIComponent(fallbackUrl) + ";end";
 
-        // Redirect to the intent URL
-        window.location.href = intentUrl;
+            // Redirect to the intent URL
+            window.location.href = intentUrl;
 
-        // If the app fails to open, redirect to the Play Store
-        setTimeout(() => {
-            window.location.href = fallbackUrl;
-        }, 2000);
+            // If the app fails to open, redirect to the Play Store
+            setTimeout(() => {
+                window.location.href = fallbackUrl;
+            }, 2000);
         }
     </script>
 </body>
